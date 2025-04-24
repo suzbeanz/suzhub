@@ -11,13 +11,9 @@
     --border-color: #EAEAEA;
 }
 
-body {
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Inter', sans-serif;
+html, body {
+    height: 100%;
+    overflow: auto;
 }
 
 #interactive-svg-bg {

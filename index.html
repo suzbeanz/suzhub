@@ -169,7 +169,8 @@
                  const touch = event.touches[0];
                  updateMousePositions(touch);
              }
-         });
+         }, { passive: true }); // Use passive listeners to avoid blocking scrolling
+
 
          if (dangerLink && surpriseImage) {
              dangerLink.addEventListener('click', (event) => {
